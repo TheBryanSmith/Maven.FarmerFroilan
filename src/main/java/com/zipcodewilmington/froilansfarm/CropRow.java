@@ -1,5 +1,5 @@
 package com.zipcodewilmington.froilansfarm;
 
-public class CropRow {
+public class CropRow extends CropField {
 
 }

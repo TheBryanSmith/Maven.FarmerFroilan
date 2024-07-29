@@ -6,7 +6,7 @@ import org.junit.Test;
 public class CropTest {
 
     @Test
-    public void cropHasBeenFertilizedTest(){
+    public void cropHasBeenFertilizedTest() {
         Crop tomatoPlant = new TomatoPlant();
 
 
@@ -24,10 +24,10 @@ public class CropTest {
 //    }
 
 
-    //ASK whats the data type for yeilds
+    //ASK what's the data type for yields
 
     @Test
-    public void hasBeenHarvestedFalseTest(){
+    public void hasBeenHarvestedFalseTest() {
         Crop corn = new EarCorn();
         Tractor tractor = new Tractor();
 
@@ -35,10 +35,16 @@ public class CropTest {
         Assert.assertFalse(corn.hasBeenHarvested());
     }
 
-//    @Test
-//    public void yeilds(){
-//        Crop tomatoPlant = new TomatoPlant();
-//        TomatoPlant tomato = new Tomato();
-//
-//    }
+    @Test
+    public void yields() {
+        Crop tomatoPlant = new TomatoPlant();
+
+
+       tomatoPlant.fertilize();
+       tomatoPlant.hasBeenHarvested();
+
+            new Tomato();
+
+
+        }
 }

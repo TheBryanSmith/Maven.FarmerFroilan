@@ -10,6 +10,10 @@ public class ChickenCoop extends Shelter{
 
     }
 
+    public ChickenCoop() {
+        super();
+    }
+
     public void addChicken(Chicken chicken) {
         chickenList.add(chicken);
     }

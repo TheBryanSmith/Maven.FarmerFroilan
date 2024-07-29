@@ -8,5 +8,5 @@ public interface Produce {
 
 
 
-    boolean yeilds(Crop crop);
+    Edible yields(Crop crop);
 }

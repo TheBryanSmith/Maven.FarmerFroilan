@@ -39,4 +39,26 @@ public class InstanceOfTest {
 
         Assert.assertTrue(cropRows instanceof ArrayList);
     }
+
+    @Test
+    public void horseStableInstanceOfTest(){
+        Shelter horseStable = new HorseStable();
+
+        Assert.assertTrue(horseStable instanceof Shelter);
+    }
+
+    @Test
+    public void chickenCoopInstanceOfTest(){
+
+        Shelter chickenCoop = new ChickenCoop();
+
+        Assert.assertTrue(chickenCoop instanceof Shelter);
+    }
+
+    @Test
+    public void farmHouseInstanceOfTest(){
+        Shelter farmHouse = new FarmHouse();
+
+        Assert.assertTrue(farmHouse instanceof Shelter);
+    }
 }

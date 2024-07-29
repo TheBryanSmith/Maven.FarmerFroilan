@@ -20,14 +20,14 @@ public class Crop implements Produce {
     }
 
     @Override
-    public boolean yeilds(Crop crop) {
-        return false;
-    }
-//    @Override
-//    public void yeilds(Crop crop) {
-//        Crop tomatoPlant = new TomatoPlant();
-//        TomatoPlant tomato = new Tomato();
-//
-//        tomatoPlant.equals(tomato);
-//    }
+    public Edible yields(Crop crop) {
+
+                // Implement the logic to yield an Edible object here.
+                if (crop.fertilize() && crop.hasBeenHarvested()) {
+                    System.out.println("New plant has produced a tomato");
+                    return new Edible();
+                } else {
+                    return null;
+                }
+        }
 }
